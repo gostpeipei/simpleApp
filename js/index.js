@@ -144,6 +144,6 @@ window.onload = function(){
 
 		sliderTimer = setInterval(function(){
 			showNext();
-		},1000)
+		},4000)
 	})
 }
