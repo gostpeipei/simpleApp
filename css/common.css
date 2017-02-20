@@ -1,0 +1,49 @@
+html{
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+/* 水平垂直居中 */
+.c-center,.cw-center:after{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* 水平居中 */
+.c-centerX,.cw-centerX:after{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* 垂直居中 */
+.c-centerY,.cw-centerY:after{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.foot-nav {
+  border-top: 1px solid #e1e1e1;
+  height: 1.531rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.foot-nav ul li {
+  padding-top: 0.281rem;
+  text-align: center;
+}
+.foot-nav ul li img {
+  width: 0.688rem;
+  margin: 0 auto;
+}
+.foot-nav ul li span {
+  line-height: 0.562rem;
+}

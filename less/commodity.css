@@ -1,0 +1,275 @@
+.header {
+  height: 1.375rem;
+  background-color: #1763e0;
+  position: relative;
+}
+.header .left {
+  width: 1.031rem;
+  height: 1.375rem;
+  background: url("../images/commodity/left.png") center center no-repeat;
+  background-size: 0.344rem;
+}
+.header .right {
+  width: 1.781rem;
+  height: 1.375rem;
+  background: url("../images/commodity/menu.png") 0.719rem center no-repeat;
+  background-size: 0.656rem;
+}
+.header .center {
+  margin: 0 1.781rem 0 1.031rem;
+  padding-top: 0.219rem;
+  position: relative;
+}
+.header .center .search {
+  width: 7.188rem;
+  height: 0.938rem;
+  border-radius: 0.469rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 0.359rem;
+  font-size: 0.344rem;
+  color: #666666;
+}
+.header .center .button {
+  position: absolute;
+  outline-style: none;
+  top: 0.219rem;
+  right: 0;
+  width: 0.859rem;
+  height: 0.938rem;
+  border-radius: 0 0.469rem 0.469rem 0;
+  background: #fff url("../images/commodity/search.png") 0 center no-repeat;
+  background-size: 0.469rem;
+}
+.header .drop-list {
+  position: absolute;
+  width: 4.312rem;
+  height: 3.281rem;
+  background-color: #49484b;
+  right: 0.109rem;
+  top: 1.25rem;
+  border-radius: 0.078rem;
+  box-sizing: border-box;
+  padding: 0.156rem 0.188rem;
+  display: none;
+}
+.header .drop-list ul li {
+  box-sizing: border-box;
+  height: 1.469rem;
+}
+.header .drop-list ul li a {
+  text-align: center;
+}
+.header .drop-list ul li a .img {
+  margin-top: 0.188rem;
+  padding: 0 0.6rem;
+}
+.header .drop-list ul li a span {
+  display: block;
+  font-size: 0.312rem;
+  color: #969696;
+}
+.header .drop-list ul .topLi {
+  border-bottom: 1px solid #5b5b5d;
+}
+.header .drop-list ul .leftLi {
+  border-right: 1px solid #5b5b5d;
+}
+.header .drop-list:before {
+  position: absolute;
+  content: '▲';
+  text-align: center;
+  color: #49484b;
+  font-size: 0.5rem;
+  top: -0.5rem;
+  right: 0.5rem;
+  font-family: "consolas";
+}
+.sort {
+  height: 1.359rem;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #fff;
+}
+.sort ul {
+  height: 1.359rem;
+}
+.sort ul li {
+  float: left;
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 0.328rem;
+}
+.sort ul li a {
+  font-size: 0.375rem;
+  height: 0.688rem;
+  line-height: 0.688rem;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  border-right: 1px solid #e1e1e1;
+}
+.sort ul li .last {
+  border-right: 0;
+}
+.sort ul .current {
+  border-bottom: 0.047rem solid #2275e6;
+}
+.sort ul .current a {
+  color: #333;
+}
+.filtrate-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.filtrate-screen .filtrate-con {
+  width: 7.406rem;
+  height: 9.766rem;
+  background-color: #fff;
+  position: absolute;
+  top: 1.406rem;
+  right: 0;
+}
+.filtrate-screen .filtrate-con .head {
+  height: 1.219rem;
+  border-bottom: 1px solid #e1e1e1;
+  line-height: 1.219rem;
+  font-size: 0.406rem;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 0.672rem;
+  padding-right: 0.375rem;
+}
+.filtrate-screen .filtrate-con .head .closeBtn {
+  border-style: none;
+  width: 0.406rem;
+  height: 0.406rem;
+  background: url("../images/commodity/close.png") 0 0 no-repeat;
+  background-size: 0.406rem;
+  float: right;
+  margin-top: 0.438rem;
+}
+.filtrate-screen .filtrate-con .head:after {
+  content: '';
+  width: 0.109rem;
+  height: 0.422rem;
+  left: 0.375rem;
+  background-color: #3b80f2;
+}
+.filtrate-screen .filtrate-con .body ul li .brand-top,
+.filtrate-screen .filtrate-con .body ul li .color,
+.filtrate-screen .filtrate-con .body ul li .number,
+.filtrate-screen .filtrate-con .body ul li .reset {
+  height: 1.188rem;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 0.375rem;
+  line-height: 1.188rem;
+  padding-left: 0.375rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.filtrate-screen .filtrate-con .body ul li .reset {
+  height: 1.469rem;
+  line-height: 1.469rem;
+  border-bottom: 0;
+  color: #999;
+  box-sizing: border-box;
+  padding-right: 0.406rem;
+}
+.filtrate-screen .filtrate-con .body ul li .reset input[type=button] {
+  width: 2.344rem;
+  height: 0.938rem;
+  background-color: #216eec;
+  border-radius: 0.078rem;
+  float: right;
+  margin-top: 0.219rem;
+  color: #fff;
+}
+.filtrate-screen .filtrate-con .body ul li .brand-top:after,
+.filtrate-screen .filtrate-con .body ul li .color:after,
+.filtrate-screen .filtrate-con .body ul li .number:after {
+  content: '';
+  right: 0.391rem;
+  width: 0.422rem;
+  height: 0.219rem;
+  background: url("../images/commodity/down.PNG") 0 0 no-repeat;
+  background-size: 0.422rem;
+}
+.filtrate-screen .filtrate-con .body ul li .brand-bottom {
+  height: 3.438rem;
+  border-bottom: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  padding: 0.312rem 0.234rem;
+}
+.filtrate-screen .filtrate-con .body ul li .brand-bottom ul li {
+  float: left;
+  width: 2.031rem;
+  height: 0.781rem;
+  box-sizing: border-box;
+  border: 1px solid #cfcfcf;
+  border-radius: 0.078rem;
+  font-size: 0.344rem;
+  color: #666666;
+  line-height: 0.781rem;
+  text-align: center;
+}
+.filtrate-screen .filtrate-con .body ul li .brand-bottom ul .current {
+  border: none;
+  background-color: #f74d4d;
+  color: #fff;
+}
+.filtrate-screen .filtrate-con .body ul li .brand-bottom ul .mr {
+  margin-right: 0.234rem;
+}
+.filtrate-screen .filtrate-con .body ul li .brand-bottom ul .mt {
+  margin-top: 0.234rem;
+}
+.choiceness {
+  height: 12.2rem;
+  overflow-y: scroll;
+  margin-bottom: 1.531rem;
+}
+.choiceness .choiceness-body {
+  box-sizing: border-box;
+  padding: 0.312rem 0.391rem;
+  border-top: 1px solid #e1e1e1;
+  background-color: #fff;
+}
+.choiceness .choiceness-body .content {
+  float: left;
+  width: 4.469rem;
+  height: 5.5rem;
+}
+.choiceness .choiceness-body .content .text {
+  border: 1px solid #e1e1e1;
+  border-top: 0;
+  box-sizing: border-box;
+  padding: 0 0.188rem;
+}
+.choiceness .choiceness-body .content .text p {
+  font-size: 0.344rem;
+  color: #000;
+  line-height: 0.5rem;
+}
+.choiceness .choiceness-body .content .text span {
+  font-size: 0.281rem;
+  color: #333;
+  line-height: 0.594rem;
+}
+.choiceness .choiceness-body .content .text i {
+  font-size: 0.344rem;
+  color: #df3a41;
+  line-height: 0.594rem;
+}
+.choiceness .choiceness-body .content2 {
+  float: right;
+}
+.choiceness .choiceness-body .content2 .text span {
+  color: #df3a41;
+}

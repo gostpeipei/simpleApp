@@ -1,0 +1,369 @@
+.header {
+  height: 1.25rem;
+  width: 100%;
+  background-color: #1763e0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.header .left {
+  width: 0.281rem;
+  height: 0.531rem;
+  background: url("../images/prev.png") 0 0 no-repeat;
+  background-size: 0.281rem;
+  left: 0.75rem;
+}
+.header .right {
+  width: 0.609rem;
+  height: 0.594rem;
+  right: 0.641rem;
+  background: url("../images/home2.png") 0 0 no-repeat;
+  background-size: 0.609rem;
+}
+.header .center {
+  width: 100%;
+  font-size: 0.5rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #fff;
+}
+.login {
+  position: fixed;
+  z-index: 10;
+  top: 1.25rem;
+  background-color: #fffcf8;
+  border-bottom: 1px solid #ebe0cc;
+  height: 1.297rem;
+  padding-left: 0.766rem;
+  padding-right: 0.625rem;
+  font-size: 0.375rem;
+  color: #333;
+  line-height: 1.297rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.login input[type=button] {
+  margin-top: 0.312rem;
+  float: right;
+  width: 2.156rem;
+  height: 0.688rem;
+  background-color: #f68858;
+  border-radius: 0.078rem;
+  color: #fff;
+  outline-style: none;
+}
+.products-list {
+  margin-top: 2.875rem;
+  position: relative;
+}
+.products-list .products-list-screen {
+  overflow: hidden;
+}
+.products-list .products-list-screen .promotion,
+.products-list .products-list-screen .present,
+.products-list .products-list-screen .normal {
+  border-top: 1px solid #e1e1e1;
+}
+.products-list .products-list-screen .promotion li,
+.products-list .products-list-screen .present li,
+.products-list .products-list-screen .normal li {
+  height: 3.125rem;
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0.312rem 0.375rem 0;
+}
+.products-list .products-list-screen .promotion li .body .left img,
+.products-list .products-list-screen .present li .body .left img,
+.products-list .products-list-screen .normal li .body .left img {
+  width: 2.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.156rem;
+}
+.products-list .products-list-screen .promotion li .body .right,
+.products-list .products-list-screen .present li .body .right,
+.products-list .products-list-screen .normal li .body .right {
+  margin-left: 2.891rem;
+}
+.products-list .products-list-screen .promotion li .body .right .top,
+.products-list .products-list-screen .present li .body .right .top,
+.products-list .products-list-screen .normal li .body .right .top {
+  font-size: 0.375rem;
+  line-height: 0.5rem;
+  color: #333;
+  padding-right: 1.3rem;
+  position: relative;
+}
+.products-list .products-list-screen .promotion li .body .right .top .delete,
+.products-list .products-list-screen .present li .body .right .top .delete,
+.products-list .products-list-screen .normal li .body .right .top .delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: '';
+  width: 0.531rem;
+  height: 0.531rem;
+  background: url("../images/delete.png") 0 0 no-repeat;
+  background-size: 0.531rem;
+}
+.products-list .products-list-screen .promotion li .body .right p,
+.products-list .products-list-screen .present li .body .right p,
+.products-list .products-list-screen .normal li .body .right p {
+  color: #999;
+  line-height: 0.7rem;
+}
+.products-list .products-list-screen .promotion li .body .right .bottom,
+.products-list .products-list-screen .present li .body .right .bottom,
+.products-list .products-list-screen .normal li .body .right .bottom {
+  position: relative;
+}
+.products-list .products-list-screen .promotion li .body .right .bottom .amount,
+.products-list .products-list-screen .present li .body .right .bottom .amount,
+.products-list .products-list-screen .normal li .body .right .bottom .amount {
+  width: 3.547rem;
+  height: 0.75rem;
+  border: 1px solid #c6c6c6;
+  border-radius: 0.156rem;
+}
+.products-list .products-list-screen .promotion li .body .right .bottom .amount .reduce,
+.products-list .products-list-screen .present li .body .right .bottom .amount .reduce,
+.products-list .products-list-screen .normal li .body .right .bottom .amount .reduce,
+.products-list .products-list-screen .promotion li .body .right .bottom .amount .add,
+.products-list .products-list-screen .present li .body .right .bottom .amount .add,
+.products-list .products-list-screen .normal li .body .right .bottom .amount .add {
+  width: 1.031rem;
+  height: 0.75rem;
+  outline-style: none;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.156rem;
+  font-size: 0.469rem;
+  font-weight: 900;
+  color: #2d2d2d;
+}
+.products-list .products-list-screen .promotion li .body .right .bottom .amount .num,
+.products-list .products-list-screen .present li .body .right .bottom .amount .num,
+.products-list .products-list-screen .normal li .body .right .bottom .amount .num {
+  width: 1.453rem;
+  height: 0.75rem;
+  box-sizing: border-box;
+  border-left: 1px solid #c6c6c6;
+  border-right: 1px solid #c6c6c6;
+  text-align: center;
+}
+.products-list .products-list-screen .promotion li .body .right .bottom span,
+.products-list .products-list-screen .present li .body .right .bottom span,
+.products-list .products-list-screen .normal li .body .right .bottom span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.438rem;
+  line-height: 1;
+  color: #df3a41;
+}
+.products-list .products-list-screen .promotion .head,
+.products-list .products-list-screen .present .head,
+.products-list .products-list-screen .normal .head {
+  height: 0.625rem;
+  border-bottom: 0;
+  padding-top: 0;
+  background-color: #fff;
+}
+.products-list .products-list-screen .promotion .last,
+.products-list .products-list-screen .present .last,
+.products-list .products-list-screen .normal .last {
+  border-bottom: 0;
+}
+.products-list .products-list-screen .promotion .pay,
+.products-list .products-list-screen .present .pay,
+.products-list .products-list-screen .normal .pay {
+  margin-top: 0.312rem;
+  height: 1.406rem;
+  background-color: #fff;
+  position: relative;
+}
+.products-list .products-list-screen .promotion .pay .left,
+.products-list .products-list-screen .present .pay .left,
+.products-list .products-list-screen .normal .pay .left {
+  width: 5.469rem;
+  float: left;
+  height: 100%;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  padding-left: 0.406rem;
+  padding-top: 0.156rem;
+}
+.products-list .products-list-screen .promotion .pay .left p,
+.products-list .products-list-screen .present .pay .left p,
+.products-list .products-list-screen .normal .pay .left p {
+  line-height: 0.562rem;
+  color: #323232;
+  font-size: 0.375rem;
+}
+.products-list .products-list-screen .promotion .pay .left p span,
+.products-list .products-list-screen .present .pay .left p span,
+.products-list .products-list-screen .normal .pay .left p span {
+  color: #df3a41;
+}
+.products-list .products-list-screen .promotion .pay .right,
+.products-list .products-list-screen .present .pay .right,
+.products-list .products-list-screen .normal .pay .right {
+  width: 4.531rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #f74d4d;
+  color: #fff;
+  font-size: 0.5rem;
+  line-height: 1.406rem;
+  text-align: center;
+}
+.products-list .products-list-screen .nothing {
+  display: none;
+  height: 12.812rem;
+  border: 0;
+  text-align: center;
+}
+.products-list .products-list-screen .nothing .car {
+  width: 3.094rem;
+  height: 3.094rem;
+  border-radius: 50%;
+  margin: 1.656rem auto 0;
+  background: #e1e1e1 url("../images/car2.png") 0.45rem center no-repeat;
+  background-size: 1.953rem;
+}
+.products-list .products-list-screen .nothing p {
+  line-height: 1.719rem;
+  color: #666;
+  font-size: 0.344rem;
+}
+.products-list .products-list-screen .nothing .go {
+  width: 3.438rem;
+  height: 0.812rem;
+  font-size: 0.344rem;
+  line-height: 0.812rem;
+  color: #fff;
+  text-align: center;
+  background-color: #f74d4d;
+  margin: 0 auto;
+  border-bottom: 0.047rem solid #d93535;
+  border-radius: 0.125rem;
+}
+.products-list .products-list-screen .promotion {
+  position: relative;
+}
+.products-list .products-list-screen .promotion::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  content: '果冻大促销';
+  color: #fff;
+  font-size: 0.312rem;
+  line-height: 0.609rem;
+  width: 3.266rem;
+  height: 0.609rem;
+  background: url("../images/hot.PNG") 0 0 no-repeat;
+  background-size: 3.266rem;
+}
+.products-list .products-list-screen .present li {
+  height: 4.734rem;
+  margin-top: 0.312rem;
+}
+.products-list .products-list-screen .present .first {
+  margin-top: 0;
+}
+.products-list .products-list-screen .present .foot {
+  position: relative;
+  height: 1.594rem;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 0.312rem;
+  box-sizing: border-box;
+  padding: 0.312rem 0.234rem 0 1.406rem;
+}
+.products-list .products-list-screen .present .foot span {
+  position: absolute;
+  left: 0;
+  top: 0.312rem;
+  width: 1.094rem;
+  height: 0.531rem;
+  text-align: center;
+  line-height: 0.531rem;
+  font-size: 0.312rem;
+  color: #fff;
+  background-color: #f36868;
+  border-radius: 0.078rem;
+}
+.products-list .products-list-screen .present .foot p {
+  font-size: 0.344rem;
+}
+.products-list .products-list-screen .present .more {
+  height: 0.938rem;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #fafafa;
+  line-height: 0.938rem;
+  font-size: 0.375rem;
+  text-align: center;
+  margin-top: 0.312rem;
+  margin-bottom: 2.5rem;
+}
+.deleteScreen {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.deleteScreen .pop-up {
+  width: 8.438rem;
+  height: 4.062rem;
+  background-color: #fff;
+  border-radius: 0.156rem;
+  margin: 2.891rem auto;
+}
+.deleteScreen .pop-up .top {
+  height: 2.594rem;
+  line-height: 2.594rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+}
+.deleteScreen .pop-up .bottom {
+  height: 1.453rem;
+}
+.deleteScreen .pop-up .bottom span {
+  float: left;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  height: 1.438rem;
+  line-height: 1.438rem;
+  text-align: center;
+  color: #017bff;
+  font-size: 0.5rem;
+}
+.deleteScreen .pop-up .bottom .yes {
+  border-left: 1px solid #e1e1e1;
+}
+.footer {
+  margin-bottom: 1.531rem;
+  font-size: 0.312rem;
+  line-height: 0.5rem;
+  box-sizing: border-box;
+  padding-top: 60px;
+  text-align: center;
+  color: #666666;
+}
+.footer a {
+  color: #666666;
+}

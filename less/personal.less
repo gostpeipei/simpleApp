@@ -1,0 +1,197 @@
+// 头部开始
+.header{
+	height: 6.359rem;
+	background: linear-gradient(to bottom,#135cf1,#189fdf);
+	.header-top{
+		height: 1.375rem;
+		border-bottom: 1px solid #5a8df5;
+		position: relative;
+		p{	
+			height: 1.375rem;
+			line-height: 1.375rem;
+			font-size: 0.5rem;
+			color: #fff;
+			text-align: center;
+		}
+		a{
+			position: absolute;
+			content: '<';
+			width: 1.781rem;
+			height: 100%;
+			line-height: 1.375rem;
+			font-size: 0.6rem;
+			font-family: "consolas";
+			color: #fff;
+			left: 0;
+			top: 0;
+			text-align: center;
+		}
+	}
+	.header-body{
+		height: 4.969rem;
+		box-sizing: border-box;
+		padding-top: 0.719rem;
+		.portrait{
+			height: 2.406rem;
+			width: 2.406rem;
+			background: url("../images/personal/portrait.png") 0 0 no-repeat;
+			background-size: 2.406rem;
+			border: 0.125rem solid #0888e8;
+			border-radius: 50%;
+			margin: 0 auto;
+			position: relative;
+		}
+		.portrait:after{
+			position: absolute;
+			width: 0.594rem;
+			height: 0.594rem;
+			content: 'v3';
+			color: #fff;
+			line-height: 0.594rem;
+			text-align: center;
+			font-size: 0.25rem;
+			right: 0;
+			bottom: 0;
+			background-color: #7fcff1;
+			border-radius: 50%;
+
+		}
+		p{
+			font-size: 0.5rem;
+			color: #fff;
+			text-align: center;
+		}
+		span{
+			display: block;
+			font-size: 0.312rem;
+			color: #cde4f5;
+			text-align: center;
+		}
+	}
+	
+}
+
+// 权益部分开始
+.special{
+	height: 3.484rem;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 0 0.344rem;
+	background-color: #fff;
+	.special-top{
+		height: 1.125rem;
+		padding-left: 0.406rem;
+		.left{
+			padding-left: 0.734rem;
+			height: 1.125rem;
+			line-height: 1.125rem;;
+			position: relative;
+			font-size: 0.344rem;
+			color: #009fe4;
+		}
+		.left:after{
+			position: absolute;
+			content: '';
+			width: 0.734rem;
+			height: 1.125rem;
+			left: 0;
+			background: url("../images/personal/special.PNG") 0 center no-repeat;
+			background-size: 0.516rem;
+		}
+	}
+	.special-body{
+		.content{
+			padding: 0 0.953rem;
+			box-sizing: border-box;
+			text-align: center;
+			position: relative;
+			span{
+				font-size: 0.312rem;
+				line-height: 1.125rem;
+				color: #7f7f7f;
+			}
+			.line{
+				position: absolute;
+				right: 0;
+				top: 0.312rem;
+				height: 0.609rem;
+				width: 1px;
+				background-color: #bbb;
+			}
+		}
+	}
+}
+
+// 其他
+.others{
+	height: 6.25rem;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	padding-left: 0.75rem;
+	background-color: #fff;
+	margin-top: 0.234rem;
+	// margin-bottom: 0.734rem;
+	margin-bottom: 1.531rem;
+	ul{
+		li{
+			height: 1.562rem;
+			border-bottom: 1px solid #e1e1e1;
+			position: relative;
+			padding-left: 0.078rem;
+			.left{
+				float: left;
+				width: 1.125rem;
+				height: 0.531rem;
+				background: url("../images/personal/form.png") 0 0 no-repeat;
+				background-size: 0.531rem;
+			}
+			.icon2{
+				background: url("../images/personal/collect.png") 0 0 no-repeat;
+				background-size: 0.531rem;
+			}
+			.icon3{
+				background: url("../images/personal/address.png") 0 0 no-repeat;
+				background-size: 0.531rem;
+			}
+			.icon4{
+				background: url("../images/personal/setting.png") 0 0 no-repeat;
+				background-size: 0.531rem;
+			}
+			.center{
+				font-size: 0.344rem;
+				line-height: 1.562rem;
+				color: #4d4d4d;
+				margin-left: 1.219rem;
+			}
+			.right{
+				float: right;
+				font-size: 0.406rem;
+				line-height: 1.562rem;
+				font-family: "consolas";
+				color: #bdbdbd;
+				margin-right: 0.75rem;
+			}
+		}
+		.first{
+			.right{
+				position: relative;
+			}
+			.right:after{
+				position: absolute;
+				content: '08';
+				font-family: "microsoft yahei";
+				font-size: 0.281rem;
+				width: 0.734rem;
+				height: 0.344rem;
+				line-height: 0.344rem;
+				text-align: center;
+				color: #fff;
+				background-color: #f55252;
+				border-radius: 0.172rem;
+				left: -0.984rem;
+			}
+		}
+		.last{
+			border-bottom: 0;
+		}
+	}
+}
